@@ -1,0 +1,86 @@
+// ----------------------------------------
+//     Genral Styling
+// ----------------------------------------
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+a,
+input,
+input::placeholder,
+button {
+    font-family: $font-poppins;
+    color: $color-black;
+    font-weight: 400;
+}
+
+
+body {
+    overflow-x: hidden;
+    color: $color-black;
+    font-weight: 400;
+    @include margin-center;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-poppins;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.max-width {
+    max-width: 1207px;
+    width: 100%;
+    @include margin-center;
+}
